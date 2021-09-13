@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Debug View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DebugViewController" customModule="HomeworkTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Новости" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91P-2B-NOI">
+                                <rect key="frame" x="163" y="82" width="89" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-MA-rgP" userLabel="glavnaya">
+                                <rect key="frame" x="37" y="781" width="66" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Главная"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-pj-dlv">
+                                <rect key="frame" x="307" y="781" width="73" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Музыка"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsb-MY-DJm">
+                                <rect key="frame" x="163" y="781" width="99" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Сообщения"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Расскажите что-то новое..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBC-UG-ju7">
+                                <rect key="frame" x="37" y="130" width="343" height="34"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gsb-MY-DJm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5fl-er-NPY"/>
+                            <constraint firstItem="xyy-pj-dlv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="FyN-qB-Ppw"/>
+                            <constraint firstItem="gsb-MY-DJm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Lic-Si-TKW"/>
+                            <constraint firstItem="91P-2B-NOI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ZKb-4s-iEr"/>
+                            <constraint firstItem="gsb-MY-DJm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="av8-ur-SmG"/>
+                            <constraint firstItem="qBC-UG-ju7" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="etG-mp-EYU"/>
+                            <constraint firstItem="xyy-pj-dlv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hGQ-xk-cI8"/>
+                            <constraint firstItem="qBC-UG-ju7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kGR-4m-rU7"/>
+                            <constraint firstItem="gsb-MY-DJm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mKj-g8-E2t"/>
+                            <constraint firstItem="pSw-MA-rgP" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="pLo-lz-Chb"/>
+                            <constraint firstItem="pSw-MA-rgP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xNm-x5-aWu"/>
+                            <constraint firstItem="91P-2B-NOI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="yjD-D3-MxM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Message" destination="gsb-MY-DJm" id="Mk0-Py-QAT"/>
+                        <outlet property="Music" destination="xyy-pj-dlv" id="YK8-Uq-slm"/>
+                        <outlet property="glavnaya" destination="pSw-MA-rgP" id="ja0-S0-t3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
