@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeworkSeven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf2-AS-fIf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вконтакте" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xca-zo-Uze">
+                                <rect key="frame" x="153.5" y="194" width="107.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnE-cH-7my">
+                                <rect key="frame" x="179" y="311.5" width="56.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc7-Xg-GfL">
+                                <rect key="frame" x="173" y="444.5" width="68.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jex-AI-oiN">
+                                <rect key="frame" x="178.5" y="615.5" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tM2-YJ-axs">
+                                <rect key="frame" x="20" y="365.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aav-lN-QUZ">
+                                <rect key="frame" x="20" y="498.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.63921568627450975" green="0.7540849958147321" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tM2-YJ-axs" secondAttribute="trailing" constant="20" id="1Ga-4S-Bxh"/>
+                            <constraint firstItem="tM2-YJ-axs" firstAttribute="top" secondItem="fnE-cH-7my" secondAttribute="bottom" constant="30" id="2AK-gl-vf6"/>
+                            <constraint firstItem="aav-lN-QUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ma-oP-5rT"/>
+                            <constraint firstAttribute="bottom" secondItem="qf2-AS-fIf" secondAttribute="bottom" id="9De-mU-srv"/>
+                            <constraint firstItem="Mc7-Xg-GfL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="As0-Nd-YGv"/>
+                            <constraint firstItem="jex-AI-oiN" firstAttribute="top" secondItem="aav-lN-QUZ" secondAttribute="bottom" constant="83" id="CAN-Lz-508"/>
+                            <constraint firstItem="fnE-cH-7my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dif-06-kOz"/>
+                            <constraint firstItem="tM2-YJ-axs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EFr-g6-R31"/>
+                            <constraint firstItem="fnE-cH-7my" firstAttribute="top" secondItem="Xca-zo-Uze" secondAttribute="bottom" constant="90" id="Fid-o2-elt"/>
+                            <constraint firstItem="Xca-zo-Uze" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="HS1-Zx-SW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aav-lN-QUZ" secondAttribute="trailing" constant="20" id="OJP-S1-Pzd"/>
+                            <constraint firstItem="Xca-zo-Uze" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P0g-Rd-hPJ"/>
+                            <constraint firstItem="Mc7-Xg-GfL" firstAttribute="top" secondItem="tM2-YJ-axs" secondAttribute="bottom" constant="45" id="RHw-nw-IMG"/>
+                            <constraint firstItem="qf2-AS-fIf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="W6d-8p-tYy"/>
+                            <constraint firstItem="aav-lN-QUZ" firstAttribute="top" secondItem="Mc7-Xg-GfL" secondAttribute="bottom" constant="30" id="dX3-AP-eXT"/>
+                            <constraint firstItem="qf2-AS-fIf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fkc-t7-Hj7"/>
+                            <constraint firstItem="aav-lN-QUZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="icV-gU-AuC"/>
+                            <constraint firstItem="tM2-YJ-axs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcu-MN-tYe"/>
+                            <constraint firstItem="qf2-AS-fIf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nPs-vf-Mln"/>
+                            <constraint firstItem="qf2-AS-fIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nUA-dg-pd7"/>
+                            <constraint firstItem="jex-AI-oiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhn-LB-sfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="butt" destination="jex-AI-oiN" id="d4g-Fd-FtY"/>
+                        <outlet property="logintext" destination="tM2-YJ-axs" id="VsL-88-9b0"/>
+                        <outlet property="loginview" destination="fnE-cH-7my" id="z4b-NG-c0U"/>
+                        <outlet property="passwordtext" destination="aav-lN-QUZ" id="Fqn-2W-vZ5"/>
+                        <outlet property="passwordview" destination="Mc7-Xg-GfL" id="cwH-7e-eRT"/>
+                        <outlet property="titleview" destination="Xca-zo-Uze" id="xhc-d3-QUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
